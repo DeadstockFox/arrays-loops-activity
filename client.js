@@ -8,6 +8,13 @@
  */
 
 
+let hobbies = ['reading','walking','watching-tv','gaming'];
+
+for (hobby of hobbies){
+     console.log (hobby);
+}
+console.log('Number of hobbies:',hobbies.length );
+
 // Example output
 // 1. swimming
 // 2. board games
@@ -25,6 +32,21 @@
  * 4. Output the array and number of times teal was found
  */
 
+let colors = ['blue','teal', 'green', 'teal'];
+let tealcount = 0;
+
+
+
+for(let index = 0; index < colors.length; index += 1 ){
+     if (colors[index] === 'teal') {
+          tealcount += 1;
+     }
+     else{
+          tealcount +=0
+     }
+}
+     console.log(colors);
+     console.log(tealcount);
 
 // Example output
 // green, red, teal, orange, teal
@@ -41,7 +63,20 @@
  * 4. Output the original array, odd number array and even number array
  */
 
-
+let evenOdd = [3,7,11,14,16]
+let oddNumbers = [];
+let evenNumbers = [];
+for (let index = 0; index < evenOdd.length; index += 1 ){
+     if(evenOdd[index] % 2 === 0){
+          evenNumbers.push(evenOdd[index]);
+     }
+     else{
+          oddNumbers.push(evenOdd[index]);
+     }
+}
+console.log('Full Array:', evenOdd);
+console.log('Odd Numbers:', oddNumbers);
+console.log('Even Numbers:', evenNumbers);
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
 // Odd 3, 7, 11
@@ -56,8 +91,18 @@
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
-
-
+let bool = [true,true,false,false,true];
+let toggled = [];
+for (let index = 0; index < bool.length; index += 1 ){
+     if(bool[index] === true){
+       toggled.push(false);
+     }
+     else{
+       toggled.push(true)
+     }
+}
+console.log('Base Values:', bool);
+console.log('Opposite Values:', toggled);
 // Example output
 // true, false, true, true
 // Toggled false, true, false, false
@@ -75,6 +120,26 @@
  * Hint: Try using a while loop for this one.
  */
 
+let newNumbers = [7,8,9,10,0,0,0];
+
+while (newNumbers.length <= 7){
+if (newNumbers[] === 0){
+     newNumbers.pop(newNumbers[i]);
+}
+   i++;
+}
+
+
+
+
+
+
+for (let index = 0; index <= newNumbers.length; index += 1 ){
+     if(newNumbers[index]=== 0){
+          newNumbers.pop(newNumbers[index]);
+     }
+}
+console.log('New Values:', newNumbers);
 
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
